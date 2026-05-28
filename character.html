@@ -17,24 +17,33 @@
     padding: 40px 24px 64px;
   }
   .container { max-width: 960px; margin: 0 auto; }
-  .header { margin-bottom: 36px; border-bottom: 1px solid #ddd; padding-bottom: 28px; }
+  .header { margin-bottom: 28px; border-bottom: 1px solid #ddd; padding-bottom: 24px; }
   .header .badge { display: inline-block; font-size: 13px; font-weight: 500; color: #fff; background: #c0392b; padding: 3px 12px; border-radius: 3px; margin-bottom: 10px; }
   .header h1 { font-size: 26px; font-weight: 600; margin-bottom: 6px; }
   .header p { font-size: 15px; color: #777; }
-  .concept { margin-bottom: 32px; }
-  .concept h2 { font-size: 18px; font-weight: 600; margin-bottom: 12px; color: #333; }
-  .point { font-size: 15px; color: #444; margin-bottom: 10px; line-height: 1.7; }
+  .survey-intro { background: #fff8e8; border: 1px solid #f0d8a0; border-radius: 8px; padding: 22px 26px; margin-bottom: 36px; }
+  .survey-intro h3 { font-size: 17px; font-weight: 600; color: #8a6800; margin-bottom: 12px; }
+  .survey-intro p { font-size: 14.5px; color: #555; line-height: 1.7; margin-bottom: 6px; }
+  .survey-intro b { color: #c0392b; font-weight: 500; }
+  .name-input-area { display: flex; gap: 10px; align-items: center; margin-top: 16px; flex-wrap: wrap; }
+  .name-input-area label { font-size: 14px; font-weight: 500; color: #444; }
+  .name-input-area input { font-family: inherit; font-size: 14px; padding: 8px 12px; border: 1px solid #d0d0d0; border-radius: 4px; width: 220px; background: #fff; }
+  .name-input-area input:focus { outline: none; border-color: #c0392b; }
+  .planning-section { background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px; padding: 24px 26px; margin-bottom: 36px; }
+  .planning-section .section-label { display: inline-block; font-size: 12px; font-weight: 600; color: #999; letter-spacing: 1px; margin-bottom: 14px; }
+  .concept h2 { font-size: 17px; font-weight: 600; margin-bottom: 12px; color: #333; }
+  .point { font-size: 14.5px; color: #444; margin-bottom: 9px; line-height: 1.7; }
   .point b { color: #c0392b; font-weight: 500; }
-  .key-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0 32px; }
-  .key-box { background: #f8f8f8; border: 1px solid #e8e8e8; border-radius: 6px; padding: 14px 16px; }
-  .key-box .label { font-size: 13px; font-weight: 600; color: #999; letter-spacing: 0.5px; margin-bottom: 5px; }
-  .key-box .desc { font-size: 14.5px; color: #555; line-height: 1.6; }
-  .stats { display: flex; gap: 14px; margin-bottom: 28px; }
-  .stat { background: #fafafa; border: 1px solid #eee; border-radius: 6px; padding: 12px 18px; text-align: center; flex: 1; }
-  .stat .n { font-size: 24px; font-weight: 600; color: #c0392b; }
-  .stat .l { font-size: 13px; color: #999; }
-  .tiers { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
-  .tier { font-size: 13px; font-weight: 500; padding: 4px 12px; border-radius: 3px; border: 1px solid; }
+  .key-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 18px 0 22px; }
+  .key-box { background: #fff; border: 1px solid #e8e8e8; border-radius: 6px; padding: 12px 14px; }
+  .key-box .label { font-size: 12.5px; font-weight: 600; color: #999; letter-spacing: 0.5px; margin-bottom: 4px; }
+  .key-box .desc { font-size: 14px; color: #555; line-height: 1.55; }
+  .stats { display: flex; gap: 10px; margin-bottom: 18px; }
+  .stat { background: #fff; border: 1px solid #eee; border-radius: 6px; padding: 10px 16px; text-align: center; flex: 1; }
+  .stat .n { font-size: 22px; font-weight: 600; color: #c0392b; }
+  .stat .l { font-size: 12.5px; color: #999; }
+  .tiers { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tier { font-size: 12.5px; font-weight: 500; padding: 4px 11px; border-radius: 3px; border: 1px solid; }
   .t1 { color: #8b0000; border-color: #e8c0c0; background: #fdf2f2; }
   .t2 { color: #a03000; border-color: #e8cbb8; background: #fdf6f0; }
   .t3 { color: #7a6800; border-color: #e0d8a0; background: #fdfcf0; }
@@ -43,14 +52,6 @@
   .t6 { color: #5a4a8a; border-color: #c8c0e0; background: #f6f4fc; }
   .t7 { color: #4a7070; border-color: #b8d4d4; background: #f2fafa; }
   .section-title { font-size: 18px; font-weight: 600; color: #333; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #eee; }
-  .survey-intro { background: #fff8e8; border: 1px solid #f0d8a0; border-radius: 8px; padding: 20px 24px; margin-bottom: 28px; }
-  .survey-intro h3 { font-size: 16px; font-weight: 600; color: #8a6800; margin-bottom: 10px; }
-  .survey-intro p { font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 6px; }
-  .survey-intro b { color: #c0392b; font-weight: 500; }
-  .name-input-area { display: flex; gap: 10px; align-items: center; margin-top: 14px; flex-wrap: wrap; }
-  .name-input-area label { font-size: 14px; font-weight: 500; color: #444; }
-  .name-input-area input { font-family: inherit; font-size: 14px; padding: 8px 12px; border: 1px solid #d0d0d0; border-radius: 4px; width: 220px; background: #fff; }
-  .name-input-area input:focus { outline: none; border-color: #c0392b; }
   .char-list { margin-bottom: 28px; }
   .char-row {
     display: grid;
@@ -92,12 +93,9 @@
   .vote-area label { font-size: 13px; color: #555; cursor: pointer; display: flex; align-items: center; gap: 5px; user-select: none; padding: 2px 0; }
   .vote-area label:hover { color: #222; }
   .vote-area input[type="radio"] { margin: 0; cursor: pointer; accent-color: #c0392b; }
-  .vote-area label.know-label input:checked ~ span,
-  .vote-area label.like-label input:checked ~ span,
-  .vote-area label.unknown-label input:checked ~ span { font-weight: 600; }
-  .vote-area .know-label input:checked + span { color: #2a5a8a; }
-  .vote-area .like-label input:checked + span { color: #c0392b; }
-  .vote-area .unknown-label input:checked + span { color: #999; }
+  .vote-area .know-label input:checked + span { color: #2a5a8a; font-weight: 600; }
+  .vote-area .like-label input:checked + span { color: #c0392b; font-weight: 600; }
+  .vote-area .unknown-label input:checked + span { color: #999; font-weight: 600; }
   .submit-area { margin-top: 30px; padding: 26px; background: #fafafa; border: 1px solid #e8e8e8; border-radius: 8px; text-align: center; }
   .progress-text { font-size: 14px; color: #666; margin-bottom: 16px; }
   .progress-text .count { font-weight: 600; color: #c0392b; font-size: 16px; }
@@ -109,12 +107,15 @@
   .submit-status.error { color: #c0392b; font-weight: 500; }
   .submit-status.loading { color: #666; }
   @media (max-width: 640px) {
+    body { padding: 24px 16px 48px; }
     .char-row { grid-template-columns: 24px 60px 1fr; gap: 10px; }
     .char-img { width: 56px; height: 56px; }
     .char-right { grid-column: 2 / -1; text-align: left; align-items: flex-start; }
     .vote-area { align-items: flex-start; }
     .key-grid { grid-template-columns: 1fr; }
     .name-input-area input { width: 100%; }
+    .survey-intro, .planning-section { padding: 18px 18px; }
+    .stats { flex-direction: column; gap: 8px; }
   }
 </style>
 </head>
@@ -125,36 +126,10 @@
     <h1>캐릭터 재판 티어메이커</h1>
     <p>만약 이 캐릭터가 현실에서 재판을 받는다면? — 한국 형법 기준 티어 분류</p>
   </div>
-  <div class="concept">
-    <h2>기획 포인트</h2>
-    <div class="point"><b>① 형량 갭 논쟁</b> — 무잔은 당연히 사형, 그런데 이타치는? 베지터는? "동기가 있잖아" vs "학살은 학살" 같은 의견 충돌이 핵심 재미.</div>
-    <div class="point"><b>② 경범죄 믹스</b> — 살인급만 있으면 전부 사형~무기에 몰림. 짱구·둘리·케빈 같은 가벼운 케이스가 있어야 하단 티어가 살고 완급조절이 됨.</div>
-    <div class="point"><b>③ 정상참작 토론</b> — "세계를 구했으니 감형" vs "법 앞에 평등" — 코난, 마석도, 스네이프 등 선 위에 있는 캐릭터가 토론 시간을 만듦.</div>
-    <div class="key-grid">
-      <div class="key-box"><div class="label">구성 밸런스</div><div class="desc">극악범 5~6 / 중범죄 7~8 / 경범죄·애매 7~8로 티어 전체 고르게</div></div>
-      <div class="key-box"><div class="label">인지도 기준</div><div class="desc">두 분 다 아는 캐릭터 50%↑, 나머지는 한 분이라도 아는 캐릭터</div></div>
-      <div class="key-box"><div class="label">티어 7단계</div><div class="desc">부관참시 → 사형 → 무기징역 → 10년↑ → 5년↓ → 벌금 → 훈방</div></div>
-      <div class="key-box"><div class="label">논쟁 설계</div><div class="desc">"동기·맥락 참작" vs "행위 자체 판단" 양쪽 다 가능한 캐릭터 다수 배치</div></div>
-    </div>
-  </div>
-  <div class="stats">
-    <div class="stat"><div class="n">32</div><div class="l">전체 후보</div></div>
-    <div class="stat"><div class="n">20~25</div><div class="l">최종 선발</div></div>
-    <div class="stat"><div class="n">7</div><div class="l">티어 단계</div></div>
-  </div>
-  <div class="tiers">
-    <span class="tier t1">부관참시</span>
-    <span class="tier t2">사형</span>
-    <span class="tier t3">무기징역</span>
-    <span class="tier t4">10년형 이상</span>
-    <span class="tier t5">5년형 이하</span>
-    <span class="tier t6">벌금</span>
-    <span class="tier t7">훈방</span>
-  </div>
 
   <div class="survey-intro">
     <h3>📋 출연진 응답 부탁드립니다</h3>
-    <p>아래 32명의 캐릭터를 보고 각각에 대해 <b>안다 / 좋다 / 모른다</b> 중 하나를 선택해주세요.</p>
+    <p>아래로 스크롤하면 32명의 캐릭터가 나옵니다. 각 캐릭터에 대해 <b>안다 / 좋다 / 모른다</b> 중 하나를 선택해주세요.</p>
     <p>· <b>안다</b> — 알고 있는 캐릭터 &nbsp;&nbsp; · <b>좋다</b> — 꼭 다뤘으면 하는 캐릭터(희망) &nbsp;&nbsp; · <b>모른다</b> — 처음 보는 캐릭터</p>
     <p>모두 선택하신 뒤 페이지 맨 아래 <b>"결과 제출"</b> 버튼을 눌러주시면 됩니다.</p>
     <div class="name-input-area">
@@ -163,7 +138,37 @@
     </div>
   </div>
 
-  <div class="section-title">전체 후보 목록 (32명)</div>
+  <div class="planning-section">
+    <span class="section-label">기획 배경</span>
+    <div class="concept">
+      <h2>기획 포인트</h2>
+      <div class="point"><b>① 형량 갭 논쟁</b> — 무잔은 당연히 사형, 그런데 이타치는? 베지터는? "동기가 있잖아" vs "학살은 학살" 같은 의견 충돌이 핵심 재미.</div>
+      <div class="point"><b>② 경범죄 믹스</b> — 살인급만 있으면 전부 사형~무기에 몰림. 짱구·둘리·케빈 같은 가벼운 케이스가 있어야 하단 티어가 살고 완급조절이 됨.</div>
+      <div class="point"><b>③ 정상참작 토론</b> — "세계를 구했으니 감형" vs "법 앞에 평등" — 코난, 마석도, 스네이프 등 선 위에 있는 캐릭터가 토론 시간을 만듦.</div>
+      <div class="key-grid">
+        <div class="key-box"><div class="label">구성 밸런스</div><div class="desc">극악범 5~6 / 중범죄 7~8 / 경범죄·애매 7~8로 티어 전체 고르게</div></div>
+        <div class="key-box"><div class="label">인지도 기준</div><div class="desc">두 분 다 아는 캐릭터 50%↑, 나머지는 한 분이라도 아는 캐릭터</div></div>
+        <div class="key-box"><div class="label">티어 7단계</div><div class="desc">부관참시 → 사형 → 무기징역 → 10년↑ → 5년↓ → 벌금 → 훈방</div></div>
+        <div class="key-box"><div class="label">논쟁 설계</div><div class="desc">"동기·맥락 참작" vs "행위 자체 판단" 양쪽 다 가능한 캐릭터 다수 배치</div></div>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="n">32</div><div class="l">전체 후보</div></div>
+        <div class="stat"><div class="n">20~25</div><div class="l">최종 선발</div></div>
+        <div class="stat"><div class="n">7</div><div class="l">티어 단계</div></div>
+      </div>
+      <div class="tiers">
+        <span class="tier t1">부관참시</span>
+        <span class="tier t2">사형</span>
+        <span class="tier t3">무기징역</span>
+        <span class="tier t4">10년형 이상</span>
+        <span class="tier t5">5년형 이하</span>
+        <span class="tier t6">벌금</span>
+        <span class="tier t7">훈방</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">전체 후보 목록 (32명) — 응답해주세요</div>
   <div class="char-list">
 
     <!-- 1 -->
@@ -173,7 +178,7 @@
       <div class="char-body">
         <div><span class="char-name">야가미 라이토</span><span class="char-origin">데스노트</span></div>
         <div class="char-tags"><span class="tag tag-r">살인교사</span><span class="tag tag-r">연쇄살인</span><span class="tag tag-o">조작·협박</span></div>
-        <div class="char-summary">데스노트를 이용해 대량 살인을 저지르고, 정의라는 명분으로 신세계의 신을 자처함. FBI 요원 살해, L에 대한 조작·협박·살인교사 요소까지 풍부해 죄목 나열만으로도 토론이 길어지는 캐릭터.</div>
+        <div class="char-summary">데스노트로 대량 살인. 정의라는 명분으로 신세계의 신을 자처. FBI 요원 살해, L에 대한 조작·협박·살인교사 등 죄목 풍부.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s1">사형~부관참시</span>
@@ -192,7 +197,7 @@
       <div class="char-body">
         <div><span class="char-name">키부츠지 무잔</span><span class="char-origin">귀멸의 칼날</span></div>
         <div class="char-tags"><span class="tag tag-r">대량학살</span><span class="tag tag-o">가스라이팅</span><span class="tag tag-r">귀신 양산</span></div>
-        <div class="char-summary">1000년간 수많은 사람을 귀신으로 만들고, 인간과 귀살대를 상대로 장기간 살상을 지속함. 부하에게 공포 기반 복종을 강요하며, 인간 사회에 위장 침투해 가족까지 만드는 등 가스라이팅과 조직 통제의 끝판왕.</div>
+        <div class="char-summary">1000년간 인간을 귀신으로 만들고 장기 살상. 부하에게 공포 복종 강요, 인간 사회 위장 침투해 가족까지 만든 가스라이팅·조직 통제 끝판왕.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s1">부관참시</span>
@@ -211,7 +216,7 @@
       <div class="char-body">
         <div><span class="char-name">애니 레온하트</span><span class="char-origin">진격의 거인</span></div>
         <div class="char-tags"><span class="tag tag-r">대량살상</span><span class="tag tag-o">간첩활동</span></div>
-        <div class="char-summary">여성형 거인으로 변신해 조사병단원 다수를 학살하고, 벽 안 인류에 대한 간첩 임무를 수행함. 다만 마레의 전사 후보로서 세계관·전쟁 상황에 따른 정상참작 논쟁이 가능해, 단순 악역이 아닌 회색 지대 캐릭터.</div>
+        <div class="char-summary">여성형 거인으로 조사병단원 학살, 간첩 임무 수행. 마레 전사 후보 맥락으로 정상참작 논쟁 가능한 회색 지대 캐릭터.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s3">10년↑~무기</span>
@@ -230,7 +235,7 @@
       <div class="char-body">
         <div><span class="char-name">아마미야 히카리</span><span class="char-origin">H2</span></div>
         <div class="char-tags"><span class="tag tag-b">어장관리</span></div>
-        <div class="char-summary">히로와 히데오 사이에서 명확한 선택 없이 양쪽의 감정을 소비하는 전형적인 어장관리형. 명백한 범죄라기보다는 감정선과 관계의 애매함으로 재판에 올리는 예능 판결용 케이스로, 훈방 티어의 가벼운 환기 역할.</div>
+        <div class="char-summary">히로와 히데오 사이에서 선택 없이 양쪽 감정을 소비하는 어장관리형. 명백한 범죄보다 예능 판결용 케이스, 훈방 티어 환기 역할.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s7">훈방~벌금</span>
@@ -249,7 +254,7 @@
       <div class="char-body">
         <div><span class="char-name">우치하 이타치</span><span class="char-origin">나루토</span></div>
         <div class="char-tags"><span class="tag tag-r">일족 학살</span><span class="tag tag-o">정치적 명령</span><span class="tag tag-y">동생 보호</span></div>
-        <div class="char-summary">우치하 일족의 쿠데타를 방지하기 위해 마을 상층부의 명령으로 일족 전원을 학살하고, 동생 사스케만 살려둠. 정치적 명령 수행·동생 보호·마을 보전이라는 사연이 있어 "명령이면 면책이냐" vs "학살은 학살이다" 토론이 가장 잘 붙는 핵심 캐릭터.</div>
+        <div class="char-summary">쿠데타 방지를 위해 마을 명령으로 일족 전원 학살, 동생 사스케만 살려둠. "명령이면 면책이냐" vs "학살은 학살이다" 토론 가장 잘 붙는 핵심.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s3">무기~감형 논쟁</span>
@@ -268,7 +273,7 @@
       <div class="char-body">
         <div><span class="char-name">히소카</span><span class="char-origin">헌터×헌터</span></div>
         <div class="char-tags"><span class="tag tag-r">살인</span><span class="tag tag-y">성희롱</span><span class="tag tag-o">미성년 집착</span></div>
-        <div class="char-summary">강한 상대와 싸우기 위해 무차별 살인을 저지르고, 천공투기장에서 다수를 살해함. 곤·킬루아 등 미성년자에게 성적 뉘앙스의 집착을 보이며, 캐릭터성이 워낙 강해 죄목은 무겁지만 판정 싸움이 재미있는 타입.</div>
+        <div class="char-summary">강한 상대와 싸우기 위해 무차별 살인. 곤·킬루아 등 미성년자에 성적 집착. 죄목은 무겁지만 판정 싸움이 재미있는 타입.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s4">10년형 이상</span>
@@ -287,7 +292,7 @@
       <div class="char-body">
         <div><span class="char-name">유바바</span><span class="char-origin">센과 치히로의 행방불명</span></div>
         <div class="char-tags"><span class="tag tag-o">착취</span><span class="tag tag-y">사기</span><span class="tag tag-o">가스라이팅</span></div>
-        <div class="char-summary">이름을 빼앗아 정체성을 지우고 노동계약으로 묶어 강제 노동시킴. 미성년자(치히로)를 고용하고 부모를 돼지로 만들어 협박하는 등 착취·사기·가스라이팅 요소가 두루 있으나, 너무 무겁지 않아 중간 티어 밸런스로 좋음.</div>
+        <div class="char-summary">이름을 빼앗아 정체성 지우고 강제 노동. 미성년자 고용, 부모를 돼지로 만들어 협박. 착취·사기·가스라이팅 복합, 중간 티어 밸런스용.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s4">10년형 이상</span>
@@ -306,7 +311,7 @@
       <div class="char-body">
         <div><span class="char-name">쇼우 터커</span><span class="char-origin">강철의 연금술사</span></div>
         <div class="char-tags"><span class="tag tag-r">인체실험</span><span class="tag tag-r">아동학대</span></div>
-        <div class="char-summary">국가자격 유지를 위해 먼저 아내를, 이어서 친딸 니나와 반려견 알렉산더를 합성수로 만든 대표적 혐오 캐릭터. 짧은 등장 대비 죄질과 시청자 분노가 애니 역사상 최상위급이라 부관참시 티어 자동 배치 후보.</div>
+        <div class="char-summary">국가자격 유지를 위해 아내, 친딸 니나와 반려견을 합성수로 만든 혐오 캐릭터. 죄질과 분노 최상위급, 부관참시 자동 배치 후보.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s1">부관참시</span>
@@ -325,7 +330,7 @@
       <div class="char-body">
         <div><span class="char-name">베지터</span><span class="char-origin">드래곤볼</span></div>
         <div class="char-tags"><span class="tag tag-r">대량학살</span><span class="tag tag-r">침략</span><span class="tag tag-y">개과천선</span></div>
-        <div class="char-summary">프리저 군 소속으로 수많은 행성을 멸망시키고, 지구 침공 시 나파와 함께 민간인을 학살함. 이후 아군화·결혼·육아를 거쳐 완전히 갱생하지만, 과거 행적은 소멸하지 않아 "갱생 감형을 얼마나 줄 것이냐"가 핵심 토론 포인트.</div>
+        <div class="char-summary">프리저 군 소속으로 수많은 행성 멸망, 지구 침공 시 민간인 학살. 이후 아군화·결혼·육아로 갱생. "갱생 감형 어디까지?" 핵심 토론.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s3">무기~10년↑</span>
@@ -344,7 +349,7 @@
       <div class="char-body">
         <div><span class="char-name">히로카와 시장</span><span class="char-origin">기생수</span></div>
         <div class="char-tags"><span class="tag tag-r">살인방조</span><span class="tag tag-o">직권남용</span><span class="tag tag-o">직무유기</span></div>
-        <div class="char-summary">기생생물들에게 시청 일자리를 제공하고 인간 포식을 조직적으로 묵인한 공직자. 본인은 순수 인간이면서 "환경을 위해 인간이 줄어야 한다"는 논리를 펼쳐, 직무유기·직권남용·살인방조가 복합적으로 걸림. 다만 대중 인지도는 낮을 수 있음.</div>
+        <div class="char-summary">기생생물에게 시청 일자리 주고 인간 포식 묵인. "환경을 위해 인간이 줄어야"라는 논리로 직무유기·직권남용·살인방조 복합.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s4">10년형 이상</span>
@@ -363,7 +368,7 @@
       <div class="char-body">
         <div><span class="char-name">이카리 겐도</span><span class="char-origin">에반게리온</span></div>
         <div class="char-tags"><span class="tag tag-r">아동학대</span><span class="tag tag-r">살인</span><span class="tag tag-o">인류보완계획</span></div>
-        <div class="char-summary">14세 아들 신지를 전투병기의 파일럿으로 강제 투입하고, 아내 유이의 부활을 위해 인류 전체를 도구화함. 죄목이 추상적이지만 "아버지로서의 재판"이라는 프레임으로 잡으면 토론성이 높아, 아동학대·방임 논쟁에 특화된 캐릭터.</div>
+        <div class="char-summary">14세 아들 신지를 전투병기 파일럿으로 강제 투입, 아내 부활을 위해 인류 도구화. "아버지로서의 재판" 프레임으로 아동학대 논쟁 특화.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s3">무기징역</span>
@@ -382,7 +387,7 @@
       <div class="char-body">
         <div><span class="char-name">에도가와 코난</span><span class="char-origin">명탐정 코난</span></div>
         <div class="char-tags"><span class="tag tag-y">마취총 남용</span><span class="tag tag-b">신분은폐</span><span class="tag tag-b">수사권 남용</span></div>
-        <div class="char-summary">모리 코고로에게 무단으로 마취침을 수백 회 투여(상해), 신분을 은폐한 채 현장에 개입하며 사실상 수사권을 남용함. 주인공 보정을 제거하면 의외로 죄목이 많아, "탐정이 허용되는 범위는 어디까지인가" 논쟁과 웃음을 동시에 유발.</div>
+        <div class="char-summary">모리 코고로에 무단 마취침 수백 회(상해), 신분 은폐 + 수사권 남용. "탐정 허용 범위 어디까지?" 논쟁과 웃음 동시 유발.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s5">벌금~5년↓</span>
@@ -401,7 +406,7 @@
       <div class="char-body">
         <div><span class="char-name">짱구 (노하라 신노스케)</span><span class="char-origin">짱구는 못말려</span></div>
         <div class="char-tags"><span class="tag tag-b">공연음란</span><span class="tag tag-b">민폐</span></div>
-        <div class="char-summary">공공장소에서 상습적으로 하반신을 노출하고("코끼리~"), 주거침입성 장난과 각종 민폐를 일삼는 코미디형 경범죄 캐릭터. 만 5세라 형사미성년이지만, 무거운 후보들 사이에서 분위기를 환기해주는 필수 하단 티어 캐릭터.</div>
+        <div class="char-summary">공공장소 하반신 노출("코끼리~"), 주거침입성 장난과 각종 민폐. 만 5세 형사미성년. 분위기 환기용 하단 티어 필수.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s7">훈방~벌금</span>
@@ -420,7 +425,7 @@
       <div class="char-body">
         <div><span class="char-name">네티</span><span class="char-origin">천사소녀 네티</span></div>
         <div class="char-tags"><span class="tag tag-b">절도(의적)</span></div>
-        <div class="char-summary">천사이면서도 의적처럼 물건을 훔치는 행위를 반복하는 캐릭터. 동기는 선하지만 기본적으로 절도에 해당하며, "좋은 목적의 범죄도 범죄인가" 논쟁으로 하단 티어에서 가벼운 토론을 유도할 수 있음.</div>
+        <div class="char-summary">천사이면서도 의적처럼 절도를 반복. 동기는 선해도 기본 절도. "좋은 목적의 범죄도 범죄인가" 하단 티어 가벼운 토론용.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s6">벌금~5년↓</span>
@@ -439,7 +444,7 @@
       <div class="char-body">
         <div><span class="char-name">둘리</span><span class="char-origin">아기공룡 둘리</span></div>
         <div class="char-tags"><span class="tag tag-b">무전취식</span><span class="tag tag-b">주거침입</span><span class="tag tag-b">기물파손</span></div>
-        <div class="char-summary">고길동 집에 무단으로 입주해 냉장고 음식을 상습 소비하고, 기물을 파손하며 각종 민폐를 반복함. 주거침입+재물손괴+무전취식 콤보인데, 한국인이라면 누구나 알아서 시청자 공감도가 매우 높은 필수 하단 후보.</div>
+        <div class="char-summary">고길동 집에 무단 입주, 냉장고 음식 상습 소비, 기물 파손. 주거침입+재물손괴+무전취식 콤보. 한국인 공감도 높은 필수 하단.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s6">벌금~5년↓</span>
@@ -458,7 +463,7 @@
       <div class="char-body">
         <div><span class="char-name">바쿠고 카츠키</span><span class="char-origin">히로아카</span></div>
         <div class="char-tags"><span class="tag tag-o">학교폭력</span><span class="tag tag-y">폭언·위협</span></div>
-        <div class="char-summary">데쿠에게 수년간 물리적·언어적 폭력을 가하고 "죽어라" 발언까지 함. 초반 학폭·폭언·위협 행위가 강하지만 이후 성장 서사가 있어, 성장으로 감형이 가능한가를 놓고 논쟁할 수 있는 캐릭터.</div>
+        <div class="char-summary">데쿠에 수년간 물리적·언어적 폭력, "죽어라" 발언. 학폭·폭언·위협 강하지만 성장 서사 있음. 성장 감형 논쟁용.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s5">5년형 이하</span>
@@ -477,7 +482,7 @@
       <div class="char-body">
         <div><span class="char-name">슈퍼아줌마</span><span class="char-origin">추격자 · 단군 추천</span></div>
         <div class="char-tags"><span class="tag tag-r">살인교사</span></div>
-        <div class="char-summary">작품 《추격자》의 인지도는 있으나 캐릭터 단독 인지도는 낮을 수 있음. 단군님 추천 후보로, 투입 시 방송 중 단군이 직접 설명하는 구조로 내부 밈 효과를 노릴 수 있음.</div>
+        <div class="char-summary">《추격자》 작품 인지도는 있으나 캐릭터 단독 인지도 낮음. 단군 추천 후보, 방송 중 단군이 직접 설명하는 내부 밈 효과.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s4">10년형 이상</span>
@@ -496,7 +501,7 @@
       <div class="char-body">
         <div><span class="char-name">한니발 렉터</span><span class="char-origin">양들의 침묵</span></div>
         <div class="char-tags"><span class="tag tag-r">식인</span><span class="tag tag-r">연쇄살인</span><span class="tag tag-r">탈옥</span></div>
-        <div class="char-summary">고급 요리로 위장한 식인 연쇄살인범. 수사 협조 과정에서도 결국 자기 유희였고, 탈옥 시 간수 얼굴을 벗기는 등 잔혹함이 극에 달함. 변명의 여지가 전혀 없어 빠르게 부관참시 티어에 배치하는 기준점 역할.</div>
+        <div class="char-summary">고급 요리로 위장한 식인 연쇄살인범. 수사 협조도 결국 자기 유희, 탈옥 시 간수 얼굴 벗김. 변명 여지 없는 부관참시 기준점.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s1">부관참시</span>
@@ -515,7 +520,7 @@
       <div class="char-body">
         <div><span class="char-name">용석</span><span class="char-origin">부산행</span></div>
         <div class="char-tags"><span class="tag tag-r">살인방조</span><span class="tag tag-o">강요</span><span class="tag tag-o">감염 확산</span></div>
-        <div class="char-summary">자기 생존을 위해 타인을 좀비에게 밀어넣고 문을 열도록 강요하며, 감염 확산을 야기함. 직접 살인은 아니지만 사실상 살인미수·강요·유기에 해당하고, 한국 대중 인지도와 분노 유발력이 모두 높은 한국영화 대표 악역.</div>
+        <div class="char-summary">자기 생존을 위해 타인을 좀비에게 밀어넣고 문 열도록 강요, 감염 확산. 사실상 살인미수·강요·유기, 분노 유발력 높은 대표 악역.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s2">무기~사형</span>
@@ -534,7 +539,7 @@
       <div class="char-body">
         <div><span class="char-name">테렌스 플레처</span><span class="char-origin">위플래쉬</span></div>
         <div class="char-tags"><span class="tag tag-o">가스라이팅</span><span class="tag tag-y">폭행</span><span class="tag tag-o">정신적 학대</span></div>
-        <div class="char-summary">음악학교 교수로서 학생들에게 의자 투척, 인격 모독, 정신적 학대를 가하고 제자 자살을 유발함. "천재를 만들기 위해"라는 명분이 있어, 범죄 형량보다 "교육인가 학대인가" 논쟁이 핵심인 토론 특화 캐릭터.</div>
+        <div class="char-summary">음악학교 교수로서 의자 투척·인격 모독·정신적 학대, 제자 자살 유발. "천재를 만들기 위해" 명분. "교육인가 학대인가" 토론 특화.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s5">5년↓~10년↑</span>
@@ -553,7 +558,7 @@
       <div class="char-body">
         <div><span class="char-name">아귀</span><span class="char-origin">타짜</span></div>
         <div class="char-tags"><span class="tag tag-o">폭행·협박</span><span class="tag tag-y">도박판 조작</span></div>
-        <div class="char-summary">손가락 절단 등 잔혹한 폭력과 협박을 일삼으며, 조직적으로 도박판을 조작·운영함. 죄목이 명확하고 한국 영화 대표 악역이라 인지도가 높아, 중형 티어에 깔끔하게 배치 가능한 캐릭터.</div>
+        <div class="char-summary">손가락 절단 등 잔혹한 폭력·협박, 조직적 도박판 조작·운영. 죄목 명확하고 한국 영화 대표 악역, 중형 티어 깔끔 배치.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s4">10년형 이상</span>
@@ -572,7 +577,7 @@
       <div class="char-body">
         <div><span class="char-name">타노스</span><span class="char-origin">어벤져스: 인피니티 워</span></div>
         <div class="char-tags"><span class="tag tag-r">우주적 대량학살</span></div>
-        <div class="char-summary">인피니티 스톤으로 우주 생명체의 절반을 소멸시킨 역사상 최대 규모의 학살범. "균형"이라는 나름의 철학이 있으나 수조 단위 학살은 현실 법으로 환산 자체가 불가해, "사형도 부족하다 vs 신념범" 논쟁용.</div>
+        <div class="char-summary">인피니티 스톤으로 우주 생명체 절반 소멸, 역대 최대 학살. "균형" 철학 있으나 수조 단위 학살은 법 환산 불가. "사형도 부족 vs 신념범".</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s1">부관참시</span>
@@ -591,7 +596,7 @@
       <div class="char-body">
         <div><span class="char-name">진도준</span><span class="char-origin">재벌집 막내아들</span></div>
         <div class="char-tags"><span class="tag tag-y">경제사범</span><span class="tag tag-y">정보우위 활용</span></div>
-        <div class="char-summary">주식 조작, 기업 승계, 미래 정보 우위 활용 등 경제사범식 해석이 가능하나, 캐릭터 자체의 범죄성은 다소 애매함. 다만 "재벌이면 집행유예"라는 현실 풍자 포인트가 강해 투입 시 웃음 유발 가능.</div>
+        <div class="char-summary">주식 조작·기업 승계·미래 정보 우위 활용 등 경제사범식 해석 가능. 범죄성 애매하나 "재벌이면 집행유예" 현실 풍자 포인트 강함.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s6">벌금~5년↓</span>
@@ -610,7 +615,7 @@
       <div class="char-body">
         <div><span class="char-name">박연진</span><span class="char-origin">더 글로리</span></div>
         <div class="char-tags"><span class="tag tag-r">살인 은폐</span><span class="tag tag-r">학교폭력</span><span class="tag tag-o">권력형 가해</span></div>
-        <div class="char-summary">고데기로 피해자 피부를 지지는 극단적 학교폭력을 가하고, 성인 이후에도 살인·은폐·권력형 가해를 이어감. 죄질이 강하고 대중적 분노 포인트가 확실해, 사형~무기 구간에서 시청자 감정이 격하게 실리는 캐릭터.</div>
+        <div class="char-summary">고데기로 피해자 피부 지지는 극단적 학폭, 성인 이후에도 살인·은폐·권력형 가해. 죄질 강하고 대중 분노 포인트 확실, 사형~무기 구간.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s2">사형~무기</span>
@@ -629,7 +634,7 @@
       <div class="char-body">
         <div><span class="char-name">조커</span><span class="char-origin">다크나이트 / 폴리 아 되</span></div>
         <div class="char-tags"><span class="tag tag-r">테러</span><span class="tag tag-r">살인</span><span class="tag tag-r">방화·협박</span></div>
-        <div class="char-summary">병원 폭파, 페리 인질극, 조직적 테러 등 도시 전체를 혼란에 빠뜨린 혼돈의 화신. 동기 없는 파괴가 목적이라 상위 티어 기준점으로 쓰기 좋고, "폴리 아 되" 버전 포함 시 심신미약·정신감정 논쟁까지 추가 가능.</div>
+        <div class="char-summary">병원 폭파, 페리 인질극, 조직적 테러로 도시 혼란. 동기 없는 파괴라 상위 티어 기준점. "폴리 아 되" 포함 시 심신미약 논쟁 추가.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s1">부관참시</span>
@@ -648,7 +653,7 @@
       <div class="char-body">
         <div><span class="char-name">상연</span><span class="char-origin">은중과 상연</span></div>
         <div class="char-tags"><span class="tag tag-y">무단침입</span><span class="tag tag-o">가스라이팅</span></div>
-        <div class="char-summary">집착적 관계에서 무단침입, 상대방 고립, 심리적 통제를 반복하는 스토킹형 캐릭터. 무단침입·가스라이팅형 후보로 쓸 수 있으나, 작품·캐릭터 인지도가 출연자에 따라 갈릴 수 있어 사전 확인 필요.</div>
+        <div class="char-summary">집착 관계에서 무단침입·상대 고립·심리적 통제 반복하는 스토킹형. 무단침입·가스라이팅형 후보, 인지도는 출연자에 따라 갈릴 수 있음.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s5">5년↓~10년↑</span>
@@ -667,7 +672,7 @@
       <div class="char-body">
         <div><span class="char-name">짱구</span><span class="char-origin">바람의 파이터</span></div>
         <div class="char-tags"><span class="tag tag-o">폭력</span><span class="tag tag-y">소년법 위반</span></div>
-        <div class="char-summary">학교와 거리에서 상습적으로 폭력을 행사하는 일진 캐릭터. 소년법·폭력·일진 문화 등 현실형 범죄 후보로 쓸 수 있으나, 13번 짱구(짱구는 못말려)와 이름이 겹쳐 방송 중 혼선이 생길 수 있음.</div>
+        <div class="char-summary">학교·거리에서 상습 폭력 일진. 소년법·폭력·일진 문화 현실형 범죄 후보. 13번 짱구와 이름 겹쳐 방송 중 혼선 주의.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s5">5년형 이하</span>
@@ -686,7 +691,7 @@
       <div class="char-body">
         <div><span class="char-name">세베루스 스네이프</span><span class="char-origin">해리포터</span></div>
         <div class="char-tags"><span class="tag tag-r">살인</span><span class="tag tag-o">데스이터 가담</span><span class="tag tag-y">이중첩자</span></div>
-        <div class="char-summary">덤블도어 살해(본인 요청이었으나 외형상 살인), 죽음을 먹는 자 가담, 학생 대상 정신적 학대 등 죄목이 있음. 그러나 이중첩자로서 볼드모트 패배에 결정적으로 공헌해, 정상참작 논쟁이 이타치와 함께 가장 잘 붙는 핵심 캐릭터.</div>
+        <div class="char-summary">덤블도어 살해(본인 요청), 죽음을 먹는 자 가담, 학생 정신적 학대. 그러나 이중첩자로 볼드모트 패배에 공헌. 이타치와 함께 정상참작 논쟁 핵심.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s4">10년↑~감형</span>
@@ -705,7 +710,7 @@
       <div class="char-body">
         <div><span class="char-name">마일스 쿼리치 대령</span><span class="char-origin">아바타 시리즈</span></div>
         <div class="char-tags"><span class="tag tag-r">원주민 학살</span><span class="tag tag-r">생태계 파괴</span><span class="tag tag-o">군사 침략</span></div>
-        <div class="char-summary">판도라 원주민을 학살하고, 생태계를 대규모로 파괴하며, 나비족을 납치함. 군인으로서 명령 수행이라는 맥락이 있으나 개인적 복수심으로 범위를 크게 초과한 잔혹행위가 문제. 다만 "쿼리치"라는 캐릭터명 인지도가 낮을 수 있음.</div>
+        <div class="char-summary">판도라 원주민 학살·생태계 파괴·나비족 납치. 명령 수행 맥락 있으나 개인적 복수심으로 범위 크게 초과. 캐릭터명 인지도 낮을 수 있음.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s2">무기~사형</span>
@@ -724,7 +729,7 @@
       <div class="char-body">
         <div><span class="char-name">일광</span><span class="char-origin">곡성</span></div>
         <div class="char-tags"><span class="tag tag-o">사기</span><span class="tag tag-o">주술적 가스라이팅</span><span class="tag tag-r">살인방조</span></div>
-        <div class="char-summary">무당 행세를 하며 마을 사람들을 속이고, 외지인(일본인)의 저주 행위를 방조 내지 공모함. 곡성 특유의 해석 모호함이 티어 배치를 어렵게 만들어, 공포영화식 애매한 재판 논쟁에 적합한 캐릭터.</div>
+        <div class="char-summary">무당 행세로 마을 사람 속이고, 일본인 저주 행위 방조·공모. 곡성 특유의 해석 모호함으로 공포영화식 애매한 재판 논쟁 적합.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s4">10년형 이상</span>
@@ -743,7 +748,7 @@
       <div class="char-body">
         <div><span class="char-name">케빈 맥칼리스터</span><span class="char-origin">나 홀로 집에</span></div>
         <div class="char-tags"><span class="tag tag-o">특수폭행</span><span class="tag tag-y">과잉방위</span></div>
-        <div class="char-summary">주거침입 강도를 상대로 페인트통·다리미·못·화염 등 살상급 트랩을 설치해 특수폭행 논쟁이 가능함. 정당방위 vs 과잉방위 토론이 잘 붙고, 하단 티어에서 분위기를 가볍게 만들어주는 필수 환기 캐릭터.</div>
+        <div class="char-summary">주거침입 강도에 페인트통·다리미·못·화염 등 살상급 트랩 설치. 정당방위 vs 과잉방위 토론 잘 붙음. 하단 티어 환기 필수.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s7">훈방~벌금</span>
@@ -762,7 +767,7 @@
       <div class="char-body">
         <div><span class="char-name">마석도</span><span class="char-origin">범죄도시</span></div>
         <div class="char-tags"><span class="tag tag-o">폭행</span><span class="tag tag-y">기물파손</span><span class="tag tag-y">과잉진압</span></div>
-        <div class="char-summary">범죄자를 때려잡는 강력반 형사지만, 체포 과정에서 뼈를 부러뜨리고 차를 부수는 등 과잉진압을 상습적으로 행함. 주인공 보정을 제거하면 폭행·기물파손·공권력 남용이 걸려, "나쁜 놈을 때렸으니 OK?" 논쟁 유발용으로 좋음.</div>
+        <div class="char-summary">범죄자 때려잡는 강력반 형사지만 체포 시 뼈 부러뜨리고 차 부수는 등 과잉진압 상습. 폭행·기물파손·공권력 남용. "나쁜 놈 때렸으니 OK?" 논쟁.</div>
       </div>
       <div class="char-right">
         <span class="sent-badge s5">벌금~5년↓</span>
@@ -808,8 +813,9 @@
 
     if (!name) {
       statusEl.className = 'submit-status error';
-      statusEl.textContent = '이름을 입력해주세요.';
+      statusEl.textContent = '이름을 입력해주세요. (페이지 맨 위로 이동했습니다)';
       nameInput.focus();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
 
